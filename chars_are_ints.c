@@ -7,4 +7,5 @@ int main(int argc, char** argv) {
     printf("Char: %c is actually int: %d\n", ch1, ch1);
     printf("Char: %c is actually int: %d\n", ch2, ch2);
     printf("Char: %c is actually int: %d\n", ch3, ch3);
+    return 0;
 }
