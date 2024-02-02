@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
     printf("Size of long long: %lu bytes\n", sizeof(long long));
     printf("Max unsigned long long: %llu\n", ULLONG_MAX);
     int i;
+    // you shouldn't rely on uninitiated ints being 0
     printf("uninitiated int: %d\n", i);
     return 0;
 }
