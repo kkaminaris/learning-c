@@ -35,7 +35,11 @@ int main(int argc, char **argv) {
     printf("dyn_array.size = %d\n", dyn_array->size);
     printf("last element: %d\n", dyn_array->contents[dyn_array->size - 1]);
     printf("after last element: %d\n", dyn_array->contents[dyn_array->size]);
-    printf("size of dynamic array: %lu\n", sizeof(*dyn_array));
+
+    // GNU extension, declare size of array as variable instead of constant
+    int a = 7;
+    int arr[a];
+    printf("\nsize of array = %lu\n", sizeof(arr));
 
     return 0;
 
